@@ -25,7 +25,7 @@ trait CliHelperTrait
         $result .= "Calculate standard and bonus pay dates and save into csv file.\n\r";
         $result .= "\n\r";
         $result .= "  -h, --help            print this help\n\r";
-        $result .= "  -y, --year=YEAR       set year format 'YYYY'\n\r";
+        $result .= "  -y, --year=YEAR       set year, mandatory format 'YYYY'\n\r";
         $result .= "  -f, --file=FILE_NAME  set filename to save\n\r";
         $result .= "  -F, --force           override if file exists\n\r";
 
@@ -73,6 +73,8 @@ trait CliHelperTrait
     }
 
     /**
+     * @param string $message
+     *
      * @return string
      */
     public function getErrorWithMessage(string $message) : string
