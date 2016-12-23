@@ -1,0 +1,37 @@
+{
+  "name": "rdeleo/paydates",
+  "description": "Pay dates cli application",
+  "version": "0.0.1",
+  "type": "software",
+  "time": "2016-12-19",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Riccardo De Leo",
+      "email": "r@rdeleo.com",
+      "homepage": "https://www.linkedin.com/in/riccardo-giuseppe-de-leo-37b68a5a",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "php": ">=7",
+    "monolog/monolog": "1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.4.*",
+    "phpmd/phpmd" : "@stable",
+    "squizlabs/php_codesniffer": "2.6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "RDeLeo\\PayDates\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RDeLeo\\PayDatesTest\\": "test/src/",
+      "RDeLeo\\PayDatesTestUtility\\": "test/utilities/"
+    }
+  },
+  "minimum-stability": "stable"
+}
